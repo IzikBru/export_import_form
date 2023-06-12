@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tags examples</title>
+</head>
+<body>
+
+<form action="/submit" method="post">
+	textarea<textarea name="message" rows="3" cols="50"></textarea><br>
+	
+	<div contenteditable="true">Editable content</div>
+	<div> test in inner element
+		<div>inner textarea<textarea name="message" rows="2" cols="40"></textarea></div>
+	</div>
+	
+	<fieldset>
+	  <legend contenteditable="true">Editable Legend</legend>
+	</fieldset><br>
+
+	<select name="list_test">
+		<option value="1">one</option>
+		<option value="2">two</option>
+		<option value="3">three</option>
+		<option value="4">four</option>
+		<option value="5">five</option>
+	</select><br>
+
+	<select name="from[]" multiple="multiple">
+		<option value="0">option a</option>
+		<option value="1">option b</option>
+		<option value="2">option c</option>
+	</select><br>
+
+	<input type="radio" name="radio" value="radio1" checked> Radio 1
+	<input type="radio" name="radio" value="radio2"> Radio 2
+	<input type="radio" name="radio" value="radio3"> Radio 3<br>
+
+	text: <input type="text" name="name" placeholder="Enter your name"><br>
+	number: <input type="number"><br>
+	date: <input type="date"><br>
+	time: <input type="time"><br>
+	datetime: <input type="datetime"><br>
+	month: <input type="month"><br>
+	week: <input type="week"><br>
+	year: <input type="year"><br>
+	hour: <input type="hour"><br>
+	minute: <input type="minute"><br>
+	second: <input type="second"><br>
+	ampm: <input type="ampm"><br>
+	color: <input type="color"><br>
+	file: <input type="file"><br>
+	image: <input type="image"><br>
+	audio: <input type="audio"><br>
+	video: <input type="video"><br>
+	checkbox: <input type="checkbox" name="checkbox" checked><br><br><br>
+	range: <input type="range"><br>
+	email: <input type="email" name="email" value="example@example.com"><br>
+	password: <input type="password"><br>
+	url: <input type="url"><br>
+	tel: <input type="tel"><br>
+	address: <input type="address"><br>
+	city: <input type="city"><br>
+	state: <input type="state"><br>
+	zipcode: <input type="zipcode"><br>
+	country: <input type="country"><br>
+	name: <input type="name"><br>
+	lastname: <input type="lastname"><br>
+	birthday: <input type="birthday"><br>
+	gender: <input type="gender"><br>
+	occupation: <input type="occupation"><br>
+	interests: <input type="interests"><br>
+	bio: <input type="bio"><br>
+	comment: <input type="comment"><br>
+	rating: <input type="rating"><br>
+	review: <input type="review"><br>
+	search: <input type="search"><br>
+
+	output: <output contenteditable="true" name="output">Output Text</output><br>
+</form>
+
+</body>
+</html>
