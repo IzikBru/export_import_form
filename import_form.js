@@ -84,19 +84,19 @@ function fillElementValues(elm) {
 async function ImportForm() {
     try {
         const fElements = await readJsonFileAsArray();
+        fElements.forEach(fElement => {
+            try {
+                fillElementValues(fElement);
+            }
+            catch (error) {
+                console.log('Error while filling element:' + fElement + '. ' + error);
+            }
+        });
     } catch (error){
         console.log('Error while importing form. ' + error);
+        exit();
     }
     
-
-    fElements.forEach(fElement => {
-        try {
-            fillElementValues(fElement);
-        }
-        catch (error) {
-            console.log('Error while filling element:' + fElement + '. ' + error);
-        }
-    });
 }
 
 ImportForm();
