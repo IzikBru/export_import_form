@@ -142,11 +142,14 @@ function DownloadArrayAsJson(elementsArray, file_name) {
 }
 
 
-function ExportForm(formName='form_export.json') {
-	const formDom = document.querySelector('form');
-	const fElements = GetFormElements(formDom);
+function ExportForms(formName='form_export.json') {
+	const forms = document.querySelectorAll('form');
+	const fElements = []
+	forms.forEach(form => {
+		fElements.push(...GetFormElements(form));	
+	});
 	DownloadArrayAsJson(fElements, formName);
 }
 
 
-ExportForm();
+ExportForms();
